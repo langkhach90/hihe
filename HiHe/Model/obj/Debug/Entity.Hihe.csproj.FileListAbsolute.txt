@@ -1,0 +1,14 @@
+C:\Users\LangKhach\source\repos\HiHe\Model\obj\Debug\Model.Migrations.First.resources
+C:\Users\LangKhach\source\repos\HiHe\Model\obj\Debug\Model.Migrations.s.resources
+C:\Users\LangKhach\source\repos\HiHe\Model\obj\Debug\Entity.Hihe.csproj.GenerateResource.Cache
+C:\Users\LangKhach\source\repos\HiHe\Model\obj\Debug\Entity.Hihe.csproj.CoreCompileInputs.cache
+C:\Users\LangKhach\source\repos\HiHe\Model\obj\Debug\Model.dll
+C:\Users\LangKhach\source\repos\HiHe\Model\obj\Debug\Model.pdb
+C:\Users\LangKhach\source\repos\HiHe\Model\bin\Debug\Model.dll.config
+C:\Users\LangKhach\source\repos\HiHe\Model\bin\Debug\Model.dll
+C:\Users\LangKhach\source\repos\HiHe\Model\bin\Debug\Model.pdb
+C:\Users\LangKhach\source\repos\HiHe\Model\bin\Debug\EntityFramework.dll
+C:\Users\LangKhach\source\repos\HiHe\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LangKhach\source\repos\HiHe\Model\bin\Debug\EntityFramework.xml
+C:\Users\LangKhach\source\repos\HiHe\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LangKhach\source\repos\HiHe\Model\obj\Debug\Entity.Hihe.csprojResolveAssemblyReference.cache
