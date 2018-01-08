@@ -21,6 +21,12 @@ namespace HiHe
                namespaces: new string[] { "HiHe.Controllers" }
            );
             routes.MapRoute(
+              name: "Product Category",
+              url: "sanpham/{metatitle}-{CategoryId}",
+              defaults: new { controller = "Product", action = "GetListProductCategory", id = UrlParameter.Optional },
+              namespaces: new string[] { "HiHe.Controllers" }
+          );
+            routes.MapRoute(
                name: "Default",
                url: "{controller}/{action}/{id}",
                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },

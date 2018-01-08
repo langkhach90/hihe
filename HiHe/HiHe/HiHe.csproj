@@ -2388,6 +2388,7 @@
     <Content Include="Views\Shared\Categories.cshtml" />
     <Content Include="Views\Product\Detail.cshtml" />
     <Content Include="Views\Shared\Slide.cshtml" />
+    <Content Include="Views\Product\GetListProductCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

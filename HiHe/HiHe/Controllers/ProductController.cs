@@ -37,5 +37,13 @@ namespace HiHe.Controllers
             var details = db.Products.Find(id);
             return View(details);
         }
+        public ActionResult GetListProductCategory(long CategoryId)
+        {
+            var catId = db.ProductCategories.Find(CategoryId);
+            var list = db.Products.Where(x => x.CategoryID == CategoryId).ToList();
+            ViewBag.Category = catId;
+            return View(list);
+        }
+
     }
 }
