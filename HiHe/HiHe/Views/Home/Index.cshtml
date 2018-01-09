@@ -4,10 +4,24 @@
     Layout = "~/Views/Shared/_myLayout.cshtml";
     var newProducts = ViewBag.NewProducts;
     var featureProducts = ViewBag.FeatureProducts;
+    var slide = ViewBag.Slides;
 }
 @section Slide{
     <div class="header_bottom">
     <div class="header_bottom_left">
+        <section class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    @foreach (var i in slide)
+                    {
+                        <li><img src="@i.Image" alt="" /></li>
+                    }
+                </ul>
+            </div>
+        </section>
+        <div class="clear"></div>
+    </div>
+    <div class="header_bottom_right_images">
         <div class="section group">
             <div class="listview_1_of_2 images_1_of_2">
                 <div class="listimg listimg_2_of_1">
@@ -52,20 +66,8 @@
                 </div>
             </div>
         </div>
-        <div class="clear"></div>
-    </div>
-    <div class="header_bottom_right_images">
         <!-- FlexSlider -->
-        <section class="slider">
-            <div class="flexslider">
-                <ul class="slides">
-                    <li><img src="/Source/Client/images/1.jpg" alt="" /></li>
-                    <li><img src="/Source/Client/images/2.jpg" alt="" /></li>
-                    <li><img src="/Source/Client/images/3.jpg" alt="" /></li>
-                    <li><img src="/Source/Client/images/4.jpg" alt="" /></li>
-                </ul>
-            </div>
-        </section>
+        
         <!-- FlexSlider -->
     </div>
     <div class="clear"></div>
@@ -120,13 +122,14 @@
         <div class="section group">
             @foreach (var i in featureProducts)
             {
+                var url = "/chi-tiet/" + i.MetaTitle + "-" + i.ID;
             <div class="grid_1_of_4 images_1_of_4">
-                <a href="preview-3.html"><img src="@i.Image" alt="" height="200"/></a>
-                <h2>Lorem Ipsum is simply </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <a href="@url"><img src="@i.Image" alt="" height="200"/></a>
+                <h2>@i.Name </h2>
+                @*<p>@i.Decriptions</p>*@
                 <p>@*<span class="strike">$528.22</span>*@<span class="price">@i.Price.ToString("N0")</span></p>
-                <div class="button"><span><img src="/Source/Client/images/cart.jpg" alt="" /><a href="preview-3.html" class="cart-button">Thêm vào giỏ hàng</a></span> </div>
-                <div class="button"><span><a href="preview-3.html" class="details">Details</a></span></div>
+                <div class="button"><span><img src="/Source/Client/images/cart.jpg" alt="" /><a href="@url" class="cart-button">Thêm vào giỏ hàng</a></span> </div>
+                <div class="button"><span><a href="@url" class="details">Chi tiết</a></span></div>
             </div>
             }
 

@@ -71,6 +71,10 @@
     <Compile Include="Migrations\201712170951233_s.Designer.cs">
       <DependentUpon>201712170951233_s.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801090925020_-nameupdatephone.cs" />
+    <Compile Include="Migrations\201801090925020_-nameupdatephone.Designer.cs">
+      <DependentUpon>201801090925020_-nameupdatephone.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -84,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712170951233_s.resx">
       <DependentUpon>201712170951233_s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801090925020_-nameupdatephone.resx">
+      <DependentUpon>201801090925020_-nameupdatephone.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

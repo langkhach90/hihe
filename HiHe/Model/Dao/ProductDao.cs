@@ -20,5 +20,9 @@ namespace Model.Dao
         {
             return db.Products.Where(x => x.Price != null).OrderByDescending(x => x.Price).Take(top).ToList();
         }
+        public List<Product> ListCategoryProduct(long catId,int top)
+        {
+            return db.Products.Where(x => x.CategoryID == catId).Take(top).ToList();
+        }
     }
 }

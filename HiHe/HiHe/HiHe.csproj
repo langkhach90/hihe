@@ -164,16 +164,19 @@
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductCategoriesController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SlidesController.cs" />
     <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
     <Compile Include="Areas\Admin\Models\ProductView.cs" />
     <Compile Include="Areas\Admin\Models\UserLoginModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\GetMd5.cs" />
     <Compile Include="Models\ProductModel.cs" />
+    <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -220,6 +223,11 @@
     <Content Include="Areas\Admin\Views\Product\Test.cshtml" />
     <Content Include="Areas\Admin\Views\Login\Login.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Slides\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Slides\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Slides\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Slides\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Slides\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\controllers\product.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -2389,6 +2397,7 @@
     <Content Include="Views\Product\Detail.cshtml" />
     <Content Include="Views\Shared\Slide.cshtml" />
     <Content Include="Views\Product\GetListProductCategory.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

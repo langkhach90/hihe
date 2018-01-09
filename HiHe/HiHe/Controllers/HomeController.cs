@@ -11,11 +11,30 @@ namespace HiHe.Controllers
     public class HomeController : Controller
     {
         private HiHeConText db = new HiHeConText();
-        public ActionResult Index()
+        public ActionResult Index(string sortOrder)
         {
             var productDao = new ProductDao();
-            ViewBag.NewProducts = productDao.ListNewProduct(4);
-            ViewBag.FeatureProducts = productDao.ListFeatureProduct(4);
+            var listCategory = db.ProductCategories.Where(x => x.ParentID == null).ToList();
+            var slide = db.Slides.Where(x => x.Status == true).ToList();
+         //   ViewBag.CurentSort = sortOrder;
+            var listNewProduct = productDao.ListNewProduct(4);
+            var listFeatureProduct = productDao.ListFeatureProduct(4);
+            ViewBag.NewProducts = listNewProduct;
+            ViewBag.FeatureProducts = listFeatureProduct;
+            ViewBag.Slides = slide;
+            //var product = new List<Product>();
+            //switch(sortOrder)
+            //{
+            //    case "new_products":
+            //        product = listNewProduct;
+            //        break;
+            //    case "feature_product":
+            //        product = listFeatureProduct;
+            //        break;
+            //    default:
+            //        product = listNewProduct;
+            //        break;
+            //}
             return View();
         }
         public ActionResult mainMenu()

@@ -664,8 +664,9 @@ ul.sub-menu.list-unstyled.sub-menu3 {
 	padding-top: 15px;
 }
 .content{
-	padding:20px 0;
+	padding:20px;
 	background:#FFF;
+    width: 80%;
 }
 .content h2{ 
 	font-size:23px;
